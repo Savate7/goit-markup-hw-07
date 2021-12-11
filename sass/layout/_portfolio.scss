@@ -1,0 +1,102 @@
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .button_port_style {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+    & :not(:last-child){
+      margin-right: 8px;
+    }
+    li {
+      list-style-type: none;
+  }}
+
+  
+ 
+  
+  .button_port  {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 6px 22px;
+    background: var(--white-second-color);
+    border-radius: 4px;
+    color: var(--black-color);
+    cursor: pointer;
+    border-width: 0px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        background: var(--petty-color);
+        color: var(--other-text-ff);
+      
+  }}
+  
+ 
+  .style_title_port{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    margin-top: -30px;
+    margin-left: -30px; 
+    li{  
+      background-color: var(--other-text-ff);
+      outline: 1px solid #EEEEEE;
+      margin-top: 30px;
+      margin-left: 30px; 
+      flex-basis: calc((100% / 3) - 30px);  
+      transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);     
+    }     
+      & li:hover,   
+      & li:focus {
+        box-shadow: var(--box-shadow);
+      }
+  }
+     
+  .port_item {
+    padding: 20px 24px; 
+    h3{
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 2;
+      letter-spacing: 0.06em;
+      color: var(--black-color);
+      margin-bottom: 4px;         
+    }
+    p{
+      font-size: 16px;
+      line-height: 1.875;
+      letter-spacing: 0.03em;
+      color: var(--second-text-color);     
+    }
+      
+  }
+  
+
+  .card_div {
+    position: relative;
+    overflow: hidden;
+      
+  }
+  .card_text  {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: 18px;
+    line-height: 1.555;
+    letter-spacing: 0.03em;
+    background-color: rgba(33, 150, 243, 0.9);
+    color: var(--other-text-ff);
+    transform: translateY(100%);
+    padding: 63px 24px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .style_title_port li:hover .card_text {
+    transform: translateY(0);
+    }
+  

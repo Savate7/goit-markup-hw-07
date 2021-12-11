@@ -1,0 +1,44 @@
+.info_about_us{  
+
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .info_list{
+    width: 270px; 
+    p{
+      margin-top: 10px;  
+      line-height: 1.714;
+      color: var(--second-text-color);
+      padding: 0;     
+    }     
+    h3{
+      font-weight: bold;
+      line-height: 1.172;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: var(--black-color);  
+    }  
+  }
+  
+  .info_items{
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    display: flex;
+    justify-content: space-between;      
+  }
+  
+  .info_item {
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .info_icon{
+    box-sizing: content-box ;
+    background-color: #F5F4FA;
+    }

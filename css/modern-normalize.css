@@ -1,0 +1,76 @@
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+/*
+Document
+========
+*/
+
+/**
+Use a better box model (opinionated).
+*/
+
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+	}
+.card {margin: 0;}
+
+input {
+	padding: 0;
+}
+
+html {
+	line-height: 1.15; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+	-moz-tab-size: 4; /* 3 */
+	tab-size: 4; /* 3 */
+}
+
+button {
+font-family: "roboto";
+font-style: normal;
+}
+
+body {
+	
+	margin: 0; /* 1 */
+	font-family: "Roboto";		
+    font-weight: normal;
+    color: var(--black-color);
+    background-color: var(--other-text-ff);
+    }
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;  
+	margin: 0;
+	padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+img {
+	display: block;
+	}
+
+li {
+	list-style-type: none;
+	margin: 0;
+}
+
+.conteiner {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px ; 
+   } 

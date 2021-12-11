@@ -1,0 +1,179 @@
+  .backdrop {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    transition: opacity 1500ms, visibility 1500ms;
+    &.is-hidden .modal {
+      transform: scale(1.9) rotatex(180deg) translate(-300px);
+      transition: transform 1000ms;
+    }
+  }
+
+  .modal {
+    width: 528px;
+    height: 581px;
+    background: var(--other-text-ff);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 1000ms;  
+    padding: 40px;
+  }
+
+  .modal_close {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: transparent;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+       &:focus, &:hover {
+      cursor: pointer;
+      fill: var(--petty-color);
+      }
+    }
+      
+  .modal_title{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 0.87;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--black-color);
+  }
+  
+  .modal_form_input{
+    padding-left: 42px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    outline: none;
+    &:hover + .input_icon,
+    &:focus + .input_icon{
+      fill: var(--petty-color);
+      cursor: pointer;}
+    &:focus,
+    &:hover{
+      border-color: var(--petty-color);  
+      cursor: pointer;
+  }
+}    
+  .input_for_icon {
+    position: relative;
+  }
+
+  .input_icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: var(--black-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .modal_form_title{
+    font-size: 12px;
+    line-height: 1.785;
+    letter-spacing: 0.01em;
+    color: var(--second-text-color);
+    padding-top: 10px; 
+    display: block;
+  }
+  
+  .modal_form_area{
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+    &::placeholder {
+      color: rgba(117, 117, 117, 0.5);
+      font-weight: 0.85;
+      letter-spacing: 0.01em;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      }
+    
+  }
+  
+  .modal_form_checkbox_label{
+    font-style: normal;
+    font-size: 14px;
+    line-height: 0.58;
+    color: var(--second-text-color);
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .check_item{
+     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 7px;
+  }
+  .icon_check {
+      width: 16px;
+      height: 15px;
+      fill: var(--other-text-ff);
+      border: 2px solid var(--black-color);
+      border-radius: 2px;
+   }
+  
+  .modal_checkbox{
+     position: relative;
+     padding-top: 18px;
+     padding-left: 12px;
+   }
+
+  .modal_form_checkbox_input{
+      position: absolute;
+    &:checked + .modal_form_checkbox_label .icon_check{
+      background-color: var(--petty-color);
+      border: none;
+   }
+  }
+
+  .modal_check_span{
+     color: var(--petty-color);
+     text-decoration: underline;
+     /* border-bottom: 1px solid var(--petty-color); */
+   }
+  
+  .button_modal {
+    margin: auto;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 0.53;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding: 10px 55px;
+    background: var(--petty-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--other-text-ff);
+    width: 200px;
+    height: 50px;
+    border: none;
+    &:hover{
+      cursor: pointer;
+    }
+  }
