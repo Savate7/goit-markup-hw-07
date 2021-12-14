@@ -1,4 +1,4 @@
-.boss_tytle {
+.boss {
   padding-top: 200px;
   padding-bottom: 200px;
   justify-content: center;
@@ -15,7 +15,7 @@
 }
   
  
-.boss_style {  
+.boss__title {  
   font-weight: 900;
   font-size: 44px;
   line-height: 1.363;
@@ -24,12 +24,8 @@
   text-transform: uppercase;
   margin: 0 auto;
 }
-.button_text {
-
-  letter-spacing: 0.06em;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.875;
+.boss__button {
+  @include font(700, 16px, 1.875, 0.06em);
   margin: 30px auto auto;
   border: 0;
   background-color: var(--petty-color);

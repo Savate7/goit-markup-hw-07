@@ -11,12 +11,9 @@ header .conteiner{
   align-items: center;
 }
 
-.header_link,
-.header_contacts {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.172;
-  letter-spacing: 0.02em;
+.header-link,
+.header-contacts {
+  @include font(500, 14px, 1.172, 0.02em);  
   color: var(--second-text-color);
   display: flex;
   margin: 0;
@@ -25,18 +22,14 @@ header .conteiner{
  }
   
 }
-.header_contacts li a{
+.header-contacts__item{
   display: inline-flex;
   align-items: center;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);  
     &:hover, 
     &:focus
     {
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.172;
-      letter-spacing: 0.02em;
+      @include font(500, 14px, 1.172, 0.02em);
       color: var(--petty-color);
       fill: var(--petty-color);
       background-color: inherit;
@@ -52,27 +45,24 @@ header .conteiner{
 
  
 
-.header_link li {
+.header-link__item {
   color: var(--black-color);
   position: relative;
   & a:hover,
   & a:focus   
    {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.172;
-    letter-spacing: 0.02em;
+    @include font(500, 14px, 1.172, 0.02em);
     color: var(--petty-color);
     background-color: inherit;
     border: none;
   }
   }
   
-.header_contacts  {
+.header-contacts  {
   margin-left: auto;
   fill: var(--second-text-color);
 }
-.current{
+.header-link__item-current{
   color: var(--petty-color);
   &::after {
     content: '';

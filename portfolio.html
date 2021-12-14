@@ -17,24 +17,23 @@
         <header>
             <div class="conteiner">
                 <a href="" class="logo_style">Web<span class="logo_text">Studio</span></a>            
-                <nav class="nav">                
-                    <ul class="header_link">
-                        <li>                        
-                            <a href="./index.html" >Студия</a>                
+                <nav>                
+                    <ul class="header-link">
+                        <li class="header-link__item">                        
+                            <a href="./index.html">Студия</a>                
                         </li>
-                        <li>
-                            <a href="./portfolio.html" class="current">Портфолио</a>
+                        <li class="header-link__item">
+                            <a href="./portfolio.html" class="header-link__item-current">Портфолио</a>
                         </li>
-                        <li>
+                        <li class="header-link__item">
                             <a href="">Контакты</a>
                         </li>
                     </ul>           
                 </nav>           
-                <ul class="header_contacts">
+                <ul class="header-contacts">
     
-                    <li class="cotacts_style_mail"> 
-                        
-                        <a href="mailto:info@devstudio.com">
+                    <li>                     
+                        <a class="header-contacts__item" href="mailto:info@devstudio.com">
                             <svg class="header_icon" width="16px" height="12px">
                                 <use href="./images/icons/sprite.svg#icon-envelope"></use>
                             </svg>info@devstudio.com
@@ -42,9 +41,8 @@
                                          
                     </li>
     
-                    <li class="cotacts_style_tel"> 
-    
-                        <a href="tel:+380961111111">
+                    <li> 
+                        <a class="header-contacts__item" href="tel:+380961111111">
                             <svg class="header_icon" width="10px" height="16px">
                                 <use href="./images/icons/sprite.svg#icon-smartphone"></use>
                             </svg>+38 096 111 11 11
@@ -58,16 +56,16 @@
     <main> 
         <section class="portfolio">
             <div class="conteiner">               
-                <ul class="button_port_style">
-                    <li><button type="button" class="button_port">Все</button></li>
-                    <li><button type="button" class="button_port">Веб-сайты</button></li>
-                    <li><button type="button" class="button_port">Приложения</button></li>
-                    <li><button type="button" class="button_port">Дизайн</button></li>
-                    <li><button type="button" class="button_port">Маркетинг</button></li>
+                <ul class="port-button">
+                    <li><button type="button" class="port-button__item">Все</button></li>
+                    <li><button type="button" class="port-button__item">Веб-сайты</button></li>
+                    <li><button type="button" class="port-button__item">Приложения</button></li>
+                    <li><button type="button" class="port-button__item">Дизайн</button></li>
+                    <li><button type="button" class="port-button__item">Маркетинг</button></li>
                 </ul>
-                <ul class="style_title_port">                    
+                <ul class="port-card">                    
                         <li>   
-                            <a href="" class="card">
+                            <a href="">
                                 <div class="card_div">   
                                     <img width="370px" src="./images/parfolio-img/img1.jpg" alt="img1">
                                     <p class="card_text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -80,7 +78,7 @@
                         </li>
 
                         <li>
-                            <a href="" class="card">
+                            <a href="">
                                 <img width="370px" src="./images/parfolio-img/img2.jpg" alt="img2">
                                 <div class="port_item">
                                     <h3>Постер New Orlean vs Golden Star</h3>
@@ -90,7 +88,7 @@
                         </li>                    
                     
                         <li>
-                            <a href="" class="card">
+                            <a href="">
                                 <img width="370px" src="./images/parfolio-img/img3.jpg" alt="img3">
                                 <div class="port_item">
                                     <h3>Ресторан Seafood</h3>
@@ -100,7 +98,7 @@
                         </li>                    
                     
                         <li>
-                            <a href="" class="card">
+                            <a href="">
                                 <img width="370px" src="./images/parfolio-img/img4.jpg" alt="img4">
                                 <div class="port_item">
                                     <h3>Проект Prime</h3>
@@ -110,7 +108,7 @@
                         </li>                    
                     
                         <li>
-                            <a href="" class="card">
+                            <a href="">
                                 <img width="370px" src="./images/parfolio-img/img5.jpg" alt="img5">
                                 <div class="port_item">
                                     <h3>Проект Boxes</h3>
@@ -120,7 +118,7 @@
                         </li>                    
                     
                         <li>
-                            <a href="" class="card">
+                            <a href="">
                                 <img width="370px" src="./images/parfolio-img/img6.jpg" alt="img6">
                                 <div class="port_item">
                                     <h3>Inspiration has no Borders</h3>
@@ -130,7 +128,7 @@
                         </li>                   
                     
                         <li>
-                            <a href="" class="card">
+                            <a href="">
                                 <img width="370px" src="./images/parfolio-img/img7.jpg" alt="img7">
                                 <div class="port_item">
                                     <h3>Издание Limited Edition</h3>
@@ -140,7 +138,7 @@
                         </li>                   
                    
                         <li> 
-                            <a href="" class="card">
+                            <a href="">
                                 <img width="370px" src="./images/parfolio-img/img8.jpg" alt="img8">
                                 <div class="port_item">
                                     <h3>Проект LAB</h3>
@@ -150,7 +148,7 @@
                     </li>                   
                     
                         <li>
-                            <a href="" class="card">
+                            <a href="">
                                 <img width="370px" src="./images/parfolio-img/img9.jpg" alt="img9">
                                 <div class="port_item">
                                     <h3>Growing Business</h3>
@@ -168,60 +166,62 @@
         <div class="conteiner">
             <div>
                 <a href="" class="logo_style">Web<span class="logo_text2">Studio</span></a>
-                <address class="footer_style">
-                    <ul class="adress_style">
+                <address>
+                    <ul class="contacts">
                         <li> <a href="http://surl.li/vuvc" target="_blank" rel="noopener" > г. Киев, пр-т Леси Украинки, 26</a></li>
-                        <li class="footer_cotacts_style"><a href="mailto:info@example.com">info@example.com</a></li>
-                        <li class="footer_cotacts_style"><a href="tel:+380991111111">+38 099 111 11 11</a></li>                
+                        <li class="cotacts__style"><a href="mailto:info@example.com">info@example.com</a></li>
+                        <li class="cotacts__style"><a href="tel:+380991111111">+38 099 111 11 11</a></li>                
                     </ul>
                     
                 </address>
             </div>
             <div class="new-section">
                 <p class="soc-item">присоединяйтесь</p> 
-                <div class="social"> 
-                                                
-                    <a href="">                        
-                        <svg class="social_icon" width="20px" height="20px">
-                            <use href="./images/icons/sprite.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                    
-                    <a href="">
-                        <svg class="social_icon" width="20px" height="20px">
-                            <use href="./images/icons/sprite.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-
-                    <a href="">
-                        <svg class="social_icon" width="20px" height="20px">
-                            <use href="./images/icons/sprite.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                    
-                    <a href="">
-                        <svg class="social_icon" width="20px" height="20px">
-                            <use href="./images/icons/sprite.svg#icon-linkedin"></use>
-                        </svg>
-                    </a>                                
-                </div>
+                <ul class="footer__social social">                               
+                    <li><a href="">                        
+                            <svg width="20px" height="20px">
+                                <use href="./images/icons/sprite.svg#icon-instagram"></use>
+                            </svg>                                    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg width="20px" height="20px">
+                                <use href="./images/icons/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg width="20px" height="20px">
+                                <use href="./images/icons/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg width="20px" height="20px">
+                                <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>                                
+                </ul>
             </div>
-            <div class="soc_sub">
+            <div class="sender">
                 <p class="soc-item">Подпишитесь на рассылку</p>
-                <form action="#" class="soc_wram">
+                <form action="#" class="sender-block">
                     <input 
                     type="mail" 
-                    class="soc_input_mail"
+                    class="sender-block__mail"
                     placeholder="E-mail"
                     >
-                    <button type="submit" class="soc_button">Подписаться
-                        <svg class="icon_send" widht="24px" height="24px">
+                    <button type="submit" class="sender-block__button">Подписаться
+                        <svg class="icon-send" widht="24px" height="24px">
                             <use href="./images/icons/sprite.svg#icon-send"></use>
                         </svg>
                     </button>
                 </form>
             </div>
-        </div>
         </div>
         
     </footer>

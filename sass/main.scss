@@ -1,6 +1,13 @@
+@import './utils/_var.scss';
+@import './utils/_mixin.scss';
+@import './utils/_placeholders.scss';
+@import './utils/_is-hidden.scss';
+
+
 @import './components/_logo.scss';
 @import './components/_modal.scss';
 @import './components/_social_icons.scss';
+@import './components/title-h2';
 
 
 @import './layout/_header.scss';
@@ -12,8 +19,6 @@
 
 @import './layout/_portfolio.scss';
 
-@import './layout/_footer.scss';
+@import './layout/_footer.scss'
 
 
-@import './utils/_var.scss';
-@import './utils/_is-hidden.scss'

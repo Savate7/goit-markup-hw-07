@@ -1,10 +1,10 @@
-.info_about_us{  
+.info-about-us{  
 
     padding-top: 94px;
     padding-bottom: 94px;
   }
   
-  .info_list{
+  .info-list__text{
     width: 270px; 
     p{
       margin-top: 10px;  
@@ -21,14 +21,14 @@
     }  
   }
   
-  .info_items{
+  .info{
     font-size: 14px;
     letter-spacing: 0.03em;
     display: flex;
     justify-content: space-between;      
   }
   
-  .info_item {
+  .info-list__item {
     width: 270px;
     height: 120px;
     background-color: #F5F4FA;
@@ -38,7 +38,7 @@
     align-items: center;
     margin-bottom: 30px;
   }
-  .info_icon{
+  .info-list__icon{
     box-sizing: content-box ;
     background-color: #F5F4FA;
     }
