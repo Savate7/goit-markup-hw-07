@@ -7,8 +7,14 @@
 
 .team-block{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
+  li{
+    margin-right: 30px;
+  }
+  & :last-child{
+    margin-right: 0;
+  }
   
 }
 .team-block__item{ 

@@ -429,6 +429,7 @@ header .conteiner {
 }
 
 .boss {
+  width: 100vw;
   padding-top: 200px;
   padding-bottom: 200px;
   -webkit-box-pack: center;
@@ -502,9 +503,17 @@ header .conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.info li {
+  margin-right: 30px;
+}
+
+.info :last-child {
+  margin-right: 0;
 }
 
 .info-list__item {
@@ -522,6 +531,7 @@ header .conteiner {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 30px;
+  margin-right: 0;
 }
 
 .info-list__icon {
@@ -583,10 +593,18 @@ header .conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
+}
+
+.team-block li {
+  margin-right: 30px;
+}
+
+.team-block :last-child {
+  margin-right: 0;
 }
 
 .team-block__item {
@@ -744,6 +762,7 @@ header .conteiner {
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 370px;
 }
 
 .port-card li:hover,

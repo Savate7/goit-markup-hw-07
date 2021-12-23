@@ -39,24 +39,29 @@
   
  
   .port-card{
+    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;  
     margin-top: -30px;
     margin-left: -30px; 
-    li{  
+          
+    li   {  
+
       background-color: var(--other-text-ff);
       outline: 1px solid #EEEEEE;
       margin-top: 30px;
       margin-left: 30px; 
-      flex-basis: calc((100% / 3) - 30px);  
-      transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);     
-    }     
+      flex-basis: calc((100% / 3) - 30px);
+      transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);   
+      width: 370px;  
+    }
       & li:hover,   
       & li:focus {
         box-shadow: var(--box-shadow);
       }
   }
+  
      
   .port_item {
     padding: 20px 24px; 

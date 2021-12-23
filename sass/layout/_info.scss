@@ -21,14 +21,20 @@
     }  
   }
   
-  .info{
+  .info {
     font-size: 14px;
     letter-spacing: 0.03em;
     display: flex;
-    justify-content: space-between;      
+    justify-content: center;
+        // flex-basis: calc((100% / 4) - 15px);     
+    li {
+     margin-right: 30px;}
+    & :last-child{
+      margin-right: 0;
+    }
   }
   
-  .info-list__item {
+  .info-list__item{       
     width: 270px;
     height: 120px;
     background-color: #F5F4FA;
@@ -37,6 +43,9 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+    margin-right: 0;
+      
+
   }
   .info-list__icon{
     box-sizing: content-box ;
